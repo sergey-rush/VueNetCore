@@ -1,1 +1,1 @@
-# Vue Net Core Sample application with postgresql
+# Vue Net Core application with validation

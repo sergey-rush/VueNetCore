@@ -71,21 +71,13 @@ export default {
 
     updateMenu(context) {
       this.contextSection = context;
-      this.menuItens = this.menuData[context];
-      
-      console.log("Context: ", context);
-      console.log("Route path: ", this.$route.path);
-      console.log("PrevPath: ", this.prevPath);
-      
+      this.menuItens = this.menuData[context];      
       if (!this.prevPath){
         this.prevPath = context;
         return;
       }
       
-      if (this.prevPath !== context) {
-        
-        console.log("Pushed");
-        
+      if (this.prevPath !== context) {        
         if (context === 'home') {
         this.$router.push('/');
       }
